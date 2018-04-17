@@ -18,7 +18,18 @@ class User extends Model {
   static get rules() {
     return {
         email: 'required|email',
-        password: 'required'
+        password: 'required|min:6|max:30'
+      }
+  }
+  static get patchRules() {
+    return {
+        json: 'required|json',
+        patch: 'required|json'
+      }
+  }
+  static get imageRules() {
+    return {
+        image: 'required|url'
       }
   }
   /**

@@ -1,6 +1,7 @@
-# Adonis API application
+# Hackerbay backend task
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+This is the backend implementation of the hackerbay backend task.
+This application make use of the adonis js api blueprint
 
 1. Bodyparser
 2. Authentication
@@ -10,19 +11,34 @@ This is the boilerplate for creating an API server in AdonisJs, it comes pre-con
 
 ## Setup
 
-Use the adonis command to install the blueprint
+Install dependencies
 
 ```bash
-adonis new yardstick --api-only
+npm install
 ```
 
-or manually clone the repo and then run `npm install`.
+Then run the server
 
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
+```bash
+npm start
 ```
+Then run the test
+
+
+```bash
+npm test
+```
+
+check debug and error logs at log/adonis.log
+
+### API documentation
+
+Read api doc at localhost:3333/api-docs
+it will explain how to use the 3 endpoints
+
+The first endpoints is for loging in. The login endpoint
+generates a jwt token to be applied as an authorization header bearer for weekend.
+
+The second endpoint accepts a json object and a json patch object. The patch is then apllied on the json object and the readjusted json is returned.
+
+The third point accepts an image url and return a thumbnail version of the image

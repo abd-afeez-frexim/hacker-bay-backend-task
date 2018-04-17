@@ -5,8 +5,8 @@
   "description": "Adonisjs boilerplate for API server with pre-configured JWT",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "node ace test"
+    "start": "adonis serve",
+    "test": "adonis test"
   },
   "keywords": [
     "adonisjs",
@@ -27,9 +27,12 @@
     "@adonisjs/validator": "^5.0.3",
     "@adonisjs/vow": "^1.0.15",
     "adonis-swagger-jsdoc": "0.0.1",
+    "doctrine": "^2.1.0",
+    "js-yaml": "^3.11.0",
     "jsonpatch": "^3.0.1",
     "jsonwebtoken": "^8.2.1",
-    "sharp": "^0.20.1"
+    "sharp": "^0.20.1",
+    "swagger-parser": "^4.1.0"
   },
   "devDependencies": {},
   "autoload": {
