@@ -16,6 +16,12 @@ Install dependencies
 ```bash
 npm install
 ```
+create a new .env file inside the root of the project
+
+copy the content of .env.example to this file and add a random secrete key to APP_KEY="your secrete"
+
+This secrete would be used to generate jwt token for authentication and it is necessary for the test to pass.
+
 
 Then run the server
 

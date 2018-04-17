@@ -37,6 +37,7 @@ test('confirm image created and thumbnail url returned', async ({ assert }) => {
     var rand = Math.floor((Math.random()) * 9000 + 1111);
     var controller = new AuthController();
     var thumb;
+    this.timeout = 5000;
     try{
       thumb = await controller.resizeImage(myImage,50,50, "thumb" + rand)
       assert.equal(thumb.length, 32);
