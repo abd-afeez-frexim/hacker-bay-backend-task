@@ -37,7 +37,7 @@ Read api doc at localhost:3333/api-docs
 it will explain how to use the 3 endpoints
 
 The first endpoints is for loging in. The login endpoint
-generates a jwt token to be applied as an authorization header bearer for weekend.
+generates a jwt token to be applied as an authorization header bearer for the other endpoints.
 
 The second endpoint accepts a json object and a json patch object. The patch is then apllied on the json object and the readjusted json is returned.
 
