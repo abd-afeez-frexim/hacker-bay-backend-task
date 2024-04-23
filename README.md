@@ -47,4 +47,4 @@ generates a jwt token to be applied as an authorization header bearer for the ot
 
 The second endpoint accepts a json object and a json patch object. The patch is then apllied on the json object and the readjusted json is returned.
 
-The third point accepts an image url and return a thumbnail version of the image
+The third point accepts an image url and return a thumbnail version of the image.
